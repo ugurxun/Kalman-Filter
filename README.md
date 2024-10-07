@@ -1,2 +1,2 @@
 # Kalman-Filter
-Implemtation of various Kalman filter types
+Implementation of various Kalman filter types
