@@ -44,7 +44,7 @@ I = eye(6);
 x_n = f * x_n;
 p_n = f * p_n * f' + q;
 
-for i=1:35
+for i=1:n_of_meas
 
     %update
     k = p_n * h' * inv(h * p_n * h' + r);
