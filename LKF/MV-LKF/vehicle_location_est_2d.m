@@ -58,10 +58,13 @@ end
 
 %PLOT
 figure(1)
-plot(est(1,:), est(4,:), 'r-','Linewidth',2)
+plot(est(1,:), est(4,:), 'r-','Linewidth',2);hold on;
+plot(meas_xy(1,:), meas_xy(2,:), 'b-','Linewidth',2)
 title('Vehicle Location estimation 2-D')
+legend('Estimations', 'Measurements')
 xlabel('X')
 ylabel('Y')
-xlim([min(est(1,:)) max(est(1,:)) + 30])
+xlim([min(est(1,:)) max(est(1,:)) + 10])
+ylim([min(est(4,:)) max(est(4,:)) + 10])
 grid on
 
